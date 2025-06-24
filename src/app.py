@@ -5,7 +5,9 @@ def main():
 def login(username, password):
     if username == "admin" and password == "password123":
         return "Authenticated successfully!"
-    return "Authentication failed!"
+    if username == "admin" and password == "secret":
+        return "Login successful!"
+    return "Login failed! Authentication failed!"
 
 if __name__ == "__main__":
     main()
